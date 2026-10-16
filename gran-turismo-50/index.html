@@ -30,9 +30,9 @@
    {"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BENETEAU","item":"https://www.beneteau.com/"},{"@type":"ListItem","position":2,"name":"Motor yachts","item":"https://www.beneteau.com/motor-yachts"},{"@type":"ListItem","position":3,"name":"Gran Turismo 50","item":"https://www.beneteau.com/new-gran-turismo-range/gran-turismo-50"}]}
   ]}
   </script>
-  <script type="module" crossorigin src="../assets/gt50-DL-Z2pnz.js"></script>
-  <link rel="modulepreload" crossorigin href="../assets/comum-z0MRd78l.js">
-  <link rel="stylesheet" crossorigin href="../assets/comum-CU0O_j-M.css">
+  <script type="module" crossorigin src="../assets/gt50-BLLZf4LG.js"></script>
+  <link rel="modulepreload" crossorigin href="../assets/comum-CSNszjO3.js">
+  <link rel="stylesheet" crossorigin href="../assets/comum-CqYQ7md4.css">
 </head>
 <body class="gt50">
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -99,7 +99,18 @@
     <div class="dentro">
       <h2 class="t-xl titulo-linhas" id="modelo-t" data-entra-linhas><span class="linha"><span>Turn her</span></span><span class="linha"><span class="it">through 360°.</span></span></h2>
       <div class="palco" data-palco>
-        <img class="reserva" data-src="../img/gt50-standard-960.webp" data-srcset="../img/gt50-standard-160.webp 160w, ../img/gt50-standard-320.webp 320w, ../img/gt50-standard-480.webp 480w, ../img/gt50-standard-640.webp 640w, ../img/gt50-standard-960.webp 960w, ../img/gt50-standard-1600.webp 1600w, ../img/gt50-standard-1920.webp 1920w" width="1920" height="1079" data-tarde style="object-position:50% 62%" alt="Gran Turismo 50, three quarter view of the white hull" sizes="(max-width: 900px) 100vw, 80vw" loading="lazy" decoding="async">
+        <div class="giro" data-giro role="group" aria-label="Gran Turismo 50 in 360 degrees. Drag, swipe or use the arrow keys to turn her." aria-describedby="dica-360">
+          <div class="giro-mundo">
+            <img class="giro-cartaz" src="../360/white-00-960.webp" srcset="../360/white-00-960.webp 960w, ../360/white-00-1600.webp 1532w" sizes="(max-width: 900px) 96vw, 62vw" width="1532" height="812" alt="Gran Turismo 50, three quarter view of the white hull" decoding="async">
+            <!-- pontos no barco: posições guardadas para cada imagem da sequência; «Step inside» abre a porta para o interior -->
+            <div class="pontos" data-pontos hidden>
+              <button type="button" class="ponto ponto-porta" data-ponto="porta" aria-label="Step inside the Gran Turismo 50: the camera boards from the cockpit and the journey through the interior begins"><span class="ponto-anel" aria-hidden="true"></span><span class="ponto-rotulo">Step inside</span></button>
+              <button type="button" class="ponto" data-ponto="posto" aria-label="Helm station, show details" aria-controls="ponto-info" aria-expanded="false"><span class="ponto-anel" aria-hidden="true"></span><span class="ponto-rotulo">Helm station</span></button>
+              <button type="button" class="ponto" data-ponto="conves" aria-label="Main deck, show details" aria-controls="ponto-info" aria-expanded="false"><span class="ponto-anel" aria-hidden="true"></span><span class="ponto-rotulo">Main deck</span></button>
+              <button type="button" class="ponto" data-ponto="plataforma" aria-label="Swim platform, show details" aria-controls="ponto-info" aria-expanded="false"><span class="ponto-anel" aria-hidden="true"></span><span class="ponto-rotulo">Swim platform</span></button>
+            </div>
+          </div>
+        </div>
         <div class="cotas" aria-hidden="true">
           <svg viewBox="0 0 1000 600" preserveAspectRatio="none">
             <line pathLength="1" x1="120" y1="560" x2="880" y2="560"/><line pathLength="1" x1="120" y1="545" x2="120" y2="575"/><line pathLength="1" x1="880" y1="545" x2="880" y2="575"/>
@@ -110,13 +121,6 @@
           <span class="cota" style="right:0;top:50%;translate:30% -50%;rotate:90deg">AIR DRAUGHT 4.6 M</span>
           <span class="cota" style="left:6%;top:6%">BEAM 4.48 M</span>
         </div>
-        <!-- pontos no barco: o Three.js projecta-os a cada fotograma; «Step inside» abre a porta para o interior -->
-        <div class="pontos" data-pontos hidden>
-          <button type="button" class="ponto ponto-porta" data-ponto="porta" aria-label="Step inside the Gran Turismo 50: the camera boards from the cockpit and the journey through the interior begins"><span class="ponto-anel" aria-hidden="true"></span><span class="ponto-rotulo">Step inside</span></button>
-          <button type="button" class="ponto" data-ponto="posto" aria-label="Helm station, show details" aria-controls="ponto-info" aria-expanded="false"><span class="ponto-anel" aria-hidden="true"></span><span class="ponto-rotulo">Helm station</span></button>
-          <button type="button" class="ponto" data-ponto="conves" aria-label="Main deck, show details" aria-controls="ponto-info" aria-expanded="false"><span class="ponto-anel" aria-hidden="true"></span><span class="ponto-rotulo">Main deck</span></button>
-          <button type="button" class="ponto" data-ponto="plataforma" aria-label="Swim platform, show details" aria-controls="ponto-info" aria-expanded="false"><span class="ponto-anel" aria-hidden="true"></span><span class="ponto-rotulo">Swim platform</span></button>
-        </div>
         <div class="ponto-info" id="ponto-info" data-ponto-info hidden aria-live="polite"><p class="ponto-titulo" data-ponto-titulo></p><p data-ponto-texto></p><button type="button" class="fecha-info" data-fecha-info aria-label="Close"><svg><use href="#i-fecha"/></svg></button></div>
         <div class="camara-ctrl" data-camara hidden role="group" aria-label="Camera">
           <button type="button" data-zoom="0.8" aria-label="Zoom in">+</button>
@@ -124,7 +128,7 @@
           <button type="button" data-repoe class="repoe">Reset view</button>
         </div>
       </div>
-      <p class="dica"><span class="gesto" aria-hidden="true"></span>Drag to turn the yacht. Tap a point to look closer, or <b>Step inside</b>.</p>
+      <p class="dica" id="dica-360"><span class="gesto" aria-hidden="true"></span>Drag to turn the yacht. Tap a point to look closer, or <b>Step inside</b>.</p>
       <div class="vistas" role="group" aria-label="Viewpoints">
         <button type="button" data-vista="-0.55" aria-pressed="true">Three quarters</button>
         <button type="button" data-vista="1.5708">Profile</button>
@@ -142,33 +146,18 @@
           </div>
         </div>
         <div class="config-grupo">
-          <p class="config-nome" id="cfg-estofos">Cockpit upholstery</p>
-          <p class="config-escolhido" data-cfg-nome="estofos" aria-live="polite">Linetex Chalk</p>
-          <div class="amostras" role="radiogroup" aria-labelledby="cfg-estofos">
-            <button type="button" role="radio" class="amostra tecido" data-cfg="estofos" data-valor="" data-nome="Linetex Chalk" data-slug="linetex-chalk" aria-checked="true" aria-label="Linetex Chalk, as standard" style="--a:#E4DFD3"></button>
-            <span class="amostras-corte" aria-hidden="true"></span>
-            <button type="button" role="radio" class="amostra tecido" data-cfg="estofos" data-valor="#CDBB98" data-nome="Sand" data-conceito data-slug="sand" aria-checked="false" aria-label="Sand" style="--a:#CDBB98"></button>
-            <button type="button" role="radio" class="amostra tecido" data-cfg="estofos" data-valor="#7F8C7A" data-nome="Sage" data-conceito data-slug="sage" aria-checked="false" aria-label="Sage" style="--a:#7F8C7A"></button>
-            <button type="button" role="radio" class="amostra tecido" data-cfg="estofos" data-valor="#A9543A" data-nome="Terracotta" data-conceito data-slug="terracotta" aria-checked="false" aria-label="Terracotta" style="--a:#A9543A"></button>
-            <button type="button" role="radio" class="amostra tecido" data-cfg="estofos" data-valor="#22304A" data-nome="Ocean navy" data-conceito data-slug="ocean-navy" aria-checked="false" aria-label="Ocean navy" style="--a:#22304A"></button>
-          </div>
+          <p class="config-nome">Cockpit upholstery</p>
+          <p class="config-escolhido">Linetex Chalk, as standard</p>
         </div>
         <div class="config-grupo">
-          <p class="config-nome" id="cfg-teca">Teak</p>
-          <p class="config-escolhido" data-cfg-nome="teca" aria-live="polite">Natural</p>
-          <div class="amostras" role="radiogroup" aria-labelledby="cfg-teca">
-            <button type="button" role="radio" class="amostra madeira" data-cfg="teca" data-valor="" data-nome="Natural" data-slug="natural" aria-checked="true" aria-label="Natural teak" style="--a:#B27A4B"></button>
-            <span class="amostras-corte" aria-hidden="true"></span>
-            <button type="button" role="radio" class="amostra madeira" data-cfg="teca" data-valor="#CDBB9D" data-nome="Bleached" data-conceito data-slug="bleached" aria-checked="false" aria-label="Bleached teak" style="--a:#CDBB9D"></button>
-            <button type="button" role="radio" class="amostra madeira" data-cfg="teca" data-valor="#8E887E" data-nome="Weathered grey" data-conceito data-slug="weathered-grey" aria-checked="false" aria-label="Weathered grey teak" style="--a:#8E887E"></button>
-            <button type="button" role="radio" class="amostra madeira" data-cfg="teca" data-valor="#3E2618" data-nome="Dark" data-conceito data-slug="dark" aria-checked="false" aria-label="Dark teak" style="--a:#4A2E1E"></button>
-          </div>
+          <p class="config-nome">Teak</p>
+          <p class="config-escolhido">Natural</p>
         </div>
         <div class="config-pe">
           <p class="config-resumo" data-cfg-resumo>White hull, Linetex Chalk cockpit, Natural teak.</p>
           <button type="button" class="botao vazio" data-cfg-partilha>Copy the link to this GT50</button>
         </div>
-        <p class="nota-config">White and Abysse blue are BENETEAU hull colours for the Gran Turismo 50, as is Linetex Chalk upholstery as standard. Alpine Vision blue, metallic hull paint and Crevin Strada 07 upholstery are also offered. The colours after the thin line are concept colours, shown for illustration. Your dealer confirms the colours and options available.</p>
+        <p class="nota-config">White and Abysse blue are BENETEAU hull colours for the Gran Turismo 50, and Linetex Chalk upholstery is standard. Alpine Vision blue, metallic hull paint and Crevin Strada 07 upholstery are also offered. The 360° view is drawn from a concept 3D model built on the official render. Your dealer confirms the colours and options available.</p>
       </div>
     </div>
   </section>
