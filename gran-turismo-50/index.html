@@ -30,9 +30,9 @@
    {"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BENETEAU","item":"https://www.beneteau.com/"},{"@type":"ListItem","position":2,"name":"Motor yachts","item":"https://www.beneteau.com/motor-yachts"},{"@type":"ListItem","position":3,"name":"Gran Turismo 50","item":"https://www.beneteau.com/new-gran-turismo-range/gran-turismo-50"}]}
   ]}
   </script>
-  <script type="module" crossorigin src="../assets/gt50-C5MAsZ2O.js"></script>
-  <link rel="modulepreload" crossorigin href="../assets/comum-B5Acw8Fy.js">
-  <link rel="stylesheet" crossorigin href="../assets/comum-coYmL1I3.css">
+  <script type="module" crossorigin src="../assets/gt50-BsBFY3eM.js"></script>
+  <link rel="modulepreload" crossorigin href="../assets/comum-CAA-bgt2.js">
+  <link rel="stylesheet" crossorigin href="../assets/comum-GFp-PBmJ.css">
 </head>
 <body class="gt50">
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -150,12 +150,45 @@
         <button type="button" data-vista="3.1416">Stern and swim platform</button>
         <button type="button" data-vista="0">Bow</button>
       </div>
-      <div class="vistas config" role="group" aria-label="Hull colour">
-        <span class="config-nome">Hull</span>
-        <button type="button" data-casco="#F2F1EC" aria-pressed="true"><i style="--a:#F2F1EC"></i>White</button>
-        <button type="button" data-casco="#1A2944" aria-pressed="false"><i style="--a:#1A2944"></i>Alpine navy</button>
+      <div class="configurador" data-configurador data-sem-barra>
+        <p class="config-titulo">Make her yours</p>
+        <div class="config-grupo">
+          <p class="config-nome" id="cfg-casco">Hull</p>
+          <p class="config-escolhido" data-cfg-nome="casco" aria-live="polite">White</p>
+          <div class="amostras" role="radiogroup" aria-labelledby="cfg-casco">
+            <button type="button" role="radio" class="amostra gelcoat" data-cfg="casco" data-valor="#F2F1EC" data-nome="White" data-slug="white" aria-checked="true" aria-label="White" style="--a:#F2F1EC"></button>
+            <button type="button" role="radio" class="amostra gelcoat" data-cfg="casco" data-valor="#1B3358" data-nome="Abysse blue" data-slug="abysse-blue" aria-checked="false" aria-label="Abysse blue, Alpine hull paint" style="--a:#1B3358"></button>
+          </div>
+        </div>
+        <div class="config-grupo">
+          <p class="config-nome" id="cfg-estofos">Cockpit upholstery</p>
+          <p class="config-escolhido" data-cfg-nome="estofos" aria-live="polite">Linetex Chalk</p>
+          <div class="amostras" role="radiogroup" aria-labelledby="cfg-estofos">
+            <button type="button" role="radio" class="amostra tecido" data-cfg="estofos" data-valor="" data-nome="Linetex Chalk" data-slug="linetex-chalk" aria-checked="true" aria-label="Linetex Chalk, as standard" style="--a:#E4DFD3"></button>
+            <span class="amostras-corte" aria-hidden="true"></span>
+            <button type="button" role="radio" class="amostra tecido" data-cfg="estofos" data-valor="#CDBB98" data-nome="Sand" data-conceito data-slug="sand" aria-checked="false" aria-label="Sand" style="--a:#CDBB98"></button>
+            <button type="button" role="radio" class="amostra tecido" data-cfg="estofos" data-valor="#7F8C7A" data-nome="Sage" data-conceito data-slug="sage" aria-checked="false" aria-label="Sage" style="--a:#7F8C7A"></button>
+            <button type="button" role="radio" class="amostra tecido" data-cfg="estofos" data-valor="#A9543A" data-nome="Terracotta" data-conceito data-slug="terracotta" aria-checked="false" aria-label="Terracotta" style="--a:#A9543A"></button>
+            <button type="button" role="radio" class="amostra tecido" data-cfg="estofos" data-valor="#22304A" data-nome="Ocean navy" data-conceito data-slug="ocean-navy" aria-checked="false" aria-label="Ocean navy" style="--a:#22304A"></button>
+          </div>
+        </div>
+        <div class="config-grupo">
+          <p class="config-nome" id="cfg-teca">Teak</p>
+          <p class="config-escolhido" data-cfg-nome="teca" aria-live="polite">Natural</p>
+          <div class="amostras" role="radiogroup" aria-labelledby="cfg-teca">
+            <button type="button" role="radio" class="amostra madeira" data-cfg="teca" data-valor="" data-nome="Natural" data-slug="natural" aria-checked="true" aria-label="Natural teak" style="--a:#B27A4B"></button>
+            <span class="amostras-corte" aria-hidden="true"></span>
+            <button type="button" role="radio" class="amostra madeira" data-cfg="teca" data-valor="#CDBB9D" data-nome="Bleached" data-conceito data-slug="bleached" aria-checked="false" aria-label="Bleached teak" style="--a:#CDBB9D"></button>
+            <button type="button" role="radio" class="amostra madeira" data-cfg="teca" data-valor="#8E887E" data-nome="Weathered grey" data-conceito data-slug="weathered-grey" aria-checked="false" aria-label="Weathered grey teak" style="--a:#8E887E"></button>
+            <button type="button" role="radio" class="amostra madeira" data-cfg="teca" data-valor="#3E2618" data-nome="Dark" data-conceito data-slug="dark" aria-checked="false" aria-label="Dark teak" style="--a:#4A2E1E"></button>
+          </div>
+        </div>
+        <div class="config-pe">
+          <p class="config-resumo" data-cfg-resumo>White hull, Linetex Chalk cockpit, Natural teak.</p>
+          <button type="button" class="botao vazio" data-cfg-partilha>Copy the link to this GT50</button>
+        </div>
+        <p class="nota-config">White and Abysse blue are BENETEAU hull colours for the Gran Turismo 50, as is Linetex Chalk upholstery as standard. Alpine Vision blue, metallic hull paint and Crevin Strada 07 upholstery are also offered. The colours after the thin line are concept colours, shown for illustration. Your dealer confirms the colours and options available.</p>
       </div>
-      <p class="nota-config" data-entra>The two hull colours seen in BENETEAU's official photographs. Your dealer confirms the colours and options available.</p>
     </div>
   </section>
 
