@@ -30,9 +30,10 @@
   ]}
   </script>
   <script type="module" crossorigin src="../assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
-  <script type="module" crossorigin src="../assets/comum-BVtrLN60.js"></script>
-  <script type="module" crossorigin src="../assets/capitulo-BHhdSgGb.js"></script>
-  <link rel="stylesheet" crossorigin href="../assets/comum-BfRWXAqx.css">
+  <script type="module" crossorigin src="../assets/comum-Dv1B8lU0.js"></script>
+  <script type="module" crossorigin src="../assets/capitulo-xdyhLUvd.js"></script>
+  <script type="module" crossorigin src="../assets/barco-D7bA7JkS.js"></script>
+  <link rel="stylesheet" crossorigin href="../assets/comum-CHzBb0Qd.css">
 </head>
 <body class="capitulo-pag" style="--cor-cap:#8C3A1C;--luz-cap:#FFD3BD">
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -106,6 +107,73 @@
       </div>
     </div>
   </section>
+
+  <!--@@3d-->
+  <section class="capitulo modelo veleiro" id="model" data-cor="noite" data-modelo aria-labelledby="modelo-t">
+    <div class="dentro">
+      <h2 class="t-xl titulo-linhas" id="modelo-t" data-entra-linhas><span class="linha"><span>Turn her</span></span><span class="linha"><span class="it">through 360°.</span></span></h2>
+      <div class="palco" data-palco>
+        <div class="giro tres-d" data-giro role="group" aria-label="First 60 in 360 degrees. Drag, swipe or use the arrow keys to turn her." aria-describedby="dica-360">
+          <div class="giro-mundo">
+            <img class="giro-cartaz" src="../img/f60-3d-cartaz.webp" width="1600" height="900" alt="First 60, three quarter view of the white hull" decoding="async">
+            <div class="pontos" data-pontos hidden>
+              <button type="button" class="ponto ponto-porta" data-ponto="porta" aria-label="Step inside the First 60: the camera goes down the companionway and the journey through the interior begins"><span class="ponto-anel" aria-hidden="true"></span><span class="ponto-rotulo">Step inside</span></button>
+              <button type="button" class="ponto" data-ponto="cockpit" aria-label="Cockpit, show details" aria-controls="ponto-info" aria-expanded="false"><span class="ponto-anel" aria-hidden="true"></span><span class="ponto-rotulo">Cockpit</span></button>
+              <button type="button" class="ponto" data-ponto="winch" aria-label="Winch Island, show details" aria-controls="ponto-info" aria-expanded="false"><span class="ponto-anel" aria-hidden="true"></span><span class="ponto-rotulo">Winch Island</span></button>
+              <button type="button" class="ponto" data-ponto="casco" aria-label="Lines, show details" aria-controls="ponto-info" aria-expanded="false"><span class="ponto-anel" aria-hidden="true"></span><span class="ponto-rotulo">Lines</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="cotas" aria-hidden="true">
+          <span class="cota" style="left:50%;bottom:4%;translate:-50% 0">LENGTH OVERALL 18.95 M</span>
+          <span class="cota" style="right:0;top:50%;translate:30% -50%;rotate:90deg">AIR DRAUGHT 28.41 M</span>
+        </div>
+        <div class="ponto-info" id="ponto-info" data-ponto-info hidden aria-live="polite"><p class="ponto-titulo" data-ponto-titulo></p><p data-ponto-texto></p><button type="button" class="fecha-info" data-fecha-info aria-label="Close"><svg><use href="#i-fecha"/></svg></button></div>
+        <div class="camara-ctrl" data-camara hidden role="group" aria-label="Camera">
+          <button type="button" data-zoom="0.8" aria-label="Zoom in">+</button>
+          <button type="button" data-zoom="1.25" aria-label="Zoom out">&minus;</button>
+          <button type="button" data-repoe class="repoe">Reset view</button>
+        </div>
+      </div>
+      <p class="dica" id="dica-360"><span class="gesto" aria-hidden="true"></span>Drag to turn the yacht. Tap a point to look closer, or <b>Step inside</b>.</p>
+      <div class="vistas" role="group" aria-label="Viewpoints">
+        <button type="button" data-vista="0.8" aria-pressed="true">Three quarters</button>
+        <button type="button" data-vista="0">Profile</button>
+        <button type="button" data-vista="-1.5708">Stern</button>
+        <button type="button" data-vista="1.5708">Bow</button>
+      </div>
+      <div class="configurador" data-configurador data-sem-barra>
+        <p class="config-titulo">Make her yours</p>
+        <div class="config-grupo">
+          <p class="config-nome" id="cfg-casco">Hull</p>
+          <p class="config-escolhido" data-cfg-nome="casco" aria-live="polite">White</p>
+          <div class="amostras" role="radiogroup" aria-labelledby="cfg-casco">
+            <button type="button" role="radio" class="amostra gelcoat" data-cfg="casco" data-valor="#F2F1EC" data-nome="White" data-slug="white" aria-checked="true" aria-label="White" style="--a:#F2F1EC"></button>
+          </div>
+        </div>
+        <div class="config-pe">
+          <p class="config-resumo" data-cfg-resumo>White hull.</p>
+          <button type="button" class="botao vazio" data-cfg-partilha>Copy the link to this First 60</button>
+        </div>
+        <p class="nota-config">White is the hull in the official First 60 photographs. Colours and options come from your BENETEAU dealer. The 3D yacht is a concept model built from official views, shown plain on purpose.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="capitulo porta" id="aboard" data-cor="noite" data-porta aria-labelledby="porta-t">
+    <div class="dentro">
+      <h2 class="t-xxl titulo-linhas" id="porta-t" data-entra-linhas><span class="linha"><span>Step</span></span><span class="linha"><span class="it">aboard.</span></span></h2>
+      <button class="moldura" type="button" data-entrar style="--ox:50%;--oy:50%" aria-label="Enter the saloon of the First 60 and travel through the interior">
+        <img data-src="../img/f60-popa-960.webp" data-srcset="../img/f60-popa-160.webp 160w, ../img/f60-popa-320.webp 320w, ../img/f60-popa-480.webp 480w, ../img/f60-popa-640.webp 640w, ../img/f60-popa-960.webp 960w, ../img/f60-popa-1600.webp 1600w, ../img/f60-popa-2400.webp 2400w, ../img/f60-popa-2880.webp 2880w" width="2880" height="1572" data-tarde style="object-position:45% 50%" alt="" sizes="(max-width: 1600px) 100vw, 1560px" loading="lazy" decoding="async">
+        <span class="luz"></span><span class="anel"></span><span class="chamada">Enter the saloon</span>
+      </button>
+    </div>
+  </section>
+  <!--@@3d-fim-->
+
+
+
+
 
   <section class="capitulo" data-cor="papel" aria-label="First 60 spirit" style="padding-top:0">
     <div class="dentro">
@@ -222,6 +290,39 @@
 
 </main>
 
+
+
+
+
+<!--@@viagem-->
+<div class="viagem" data-viagem hidden role="dialog" aria-modal="true" aria-label="Journey through the interior of the First 60">
+  <span class="clarao" aria-hidden="true"></span>
+  <button class="fecha" type="button" data-sair aria-label="Back on deck"><svg><use href="#i-fecha"/></svg></button>
+  <div class="ecra">
+    <video muted playsinline preload="none" data-video="viagem" aria-label="Camera moving through the saloon, galley, owner's cabin"></video>
+    <p class="divisao" aria-live="polite"><span data-divisao>Saloon</span></p>
+    <div class="capitulos" role="group" aria-label="Rooms">
+      <button type="button" data-ir="0" class="activo">Saloon<i></i></button>
+      <button type="button" data-ir="6">Galley<i></i></button>
+      <button type="button" data-ir="12">Owner's cabin<i></i></button>
+    </div>
+  </div>
+  <div class="resto">
+    <div class="dentro">
+      <p class="frase">Every detail fine-tuned, below deck too.</p>
+      <p class="corpo" style="margin-top:22px;color:rgba(243,240,232,.82)">A cosy dining area faces the owner's corner and its navigation table, a full-beam galley runs below deck, and the owner's cabin has a walk-around bed facing forward, with natural light and views of the sea.</p>
+      <div class="interior-grelha">
+        <figure><img src="../img/f60-tecido-960.webp" srcset="../img/f60-tecido-160.webp 160w, ../img/f60-tecido-320.webp 320w, ../img/f60-tecido-480.webp 480w, ../img/f60-tecido-640.webp 640w, ../img/f60-tecido-960.webp 960w, ../img/f60-tecido-1570.webp 1570w" width="1570" height="1324" alt="Upholstery detail" sizes="(max-width: 760px) 100vw, 50vw" loading="lazy" decoding="async"><figcaption>Upholstery detail</figcaption></figure>
+        <figure><img src="../img/f60-cozinha-960.webp" srcset="../img/f60-cozinha-160.webp 160w, ../img/f60-cozinha-320.webp 320w, ../img/f60-cozinha-480.webp 480w, ../img/f60-cozinha-640.webp 640w, ../img/f60-cozinha-960.webp 960w, ../img/f60-cozinha-1500.webp 1500w" width="1500" height="819" alt="Full-beam galley" sizes="(max-width: 760px) 100vw, 50vw" loading="lazy" decoding="async"><figcaption>Full-beam galley</figcaption></figure>
+        <figure><img src="../img/f60-cabine-2-960.webp" srcset="../img/f60-cabine-2-160.webp 160w, ../img/f60-cabine-2-320.webp 320w, ../img/f60-cabine-2-480.webp 480w, ../img/f60-cabine-2-640.webp 640w, ../img/f60-cabine-2-960.webp 960w, ../img/f60-cabine-2-1570.webp 1570w" width="1570" height="1324" alt="Owner's cabin" sizes="(max-width: 760px) 100vw, 50vw" loading="lazy" decoding="async"><figcaption>Owner's cabin</figcaption></figure>
+        <figure><img src="../img/f60-salao-960.webp" srcset="../img/f60-salao-160.webp 160w, ../img/f60-salao-320.webp 320w, ../img/f60-salao-480.webp 480w, ../img/f60-salao-640.webp 640w, ../img/f60-salao-960.webp 960w, ../img/f60-salao-1500.webp 1500w" width="1500" height="819" alt="Dining area" sizes="(max-width: 760px) 100vw, 50vw" loading="lazy" decoding="async"><figcaption>Dining area</figcaption></figure>
+      </div>
+      <p class="volta"><button class="botao" type="button" data-sair>Back on deck <svg class="seta"><use href="#i-seta"/></svg></button></p>
+    </div>
+  </div>
+</div>
+<!--@@viagem-fim-->
+
 <div class="barra" data-barra>
   <a class="icone" href="https://www.beneteau.com/dealer-network" aria-label="Find a BENETEAU dealer"><svg><use href="#i-pino"/></svg></a>
   <a class="principal" href="../sea-trial/">Book a sea trial <svg class="seta"><use href="#i-seta"/></svg></a>
@@ -246,5 +347,6 @@
   <iframe title="BENETEAU film" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 </div>
 
+<script type="application/json" id="barco-dados">{"nome": "First 60", "glb": "f60-liso.glb", "viagem": "viagem-f60", "zonas": {"rodar": 3.14159, "alvo": 0.2, "borda": [0.138, 0.142], "tecto": 2, "topo": [0, 0], "vidro": [2, 2, 2], "plataforma": [0, 2]}, "voo": {"cockpit": {"ang": -2.2, "alt": 0.6, "zoom": 0.38}, "winch": {"ang": -2.0, "alt": 0.65, "zoom": 0.36}, "casco": {"ang": 0.25, "alt": 0.12, "zoom": 0.5}, "porta": {"ang": -1.75, "alt": 0.5}}, "cores": [{"slug": "white", "hex": "#F2F1EC", "nome": "White"}], "resumo": "{casco} hull.", "pontos": {"porta": {"mundo": [-0.3, 0.42, 0]}, "cockpit": {"mundo": [-0.75, 0.38, -0.18], "titulo": "Three cockpit zones", "texto": "The only yacht in her size range with separate cockpit zones for relaxation, dining and sailing."}, "winch": {"mundo": [-0.45, 0.42, -0.16], "titulo": "Winch Island", "texto": "A captive mainsheet winch, a walk-around Winch Island for all the running rigging and a Park Avenue boom."}, "casco": {"mundo": [0.0, 0.22, -0.26], "titulo": "Lines by Lorenzo Argento", "texto": "Lines pared back to the essentials, with sailing systems that reveal themselves only as you draw closer."}}}</script>
 </body>
 </html>

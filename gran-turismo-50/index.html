@@ -30,10 +30,10 @@
    {"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BENETEAU","item":"https://www.beneteau.com/"},{"@type":"ListItem","position":2,"name":"Motor yachts","item":"https://www.beneteau.com/motor-yachts"},{"@type":"ListItem","position":3,"name":"Gran Turismo 50","item":"https://www.beneteau.com/new-gran-turismo-range/gran-turismo-50"}]}
   ]}
   </script>
-  <script type="module" crossorigin src="../assets/gt50-BeqgEnvg.js"></script>
-  <link rel="modulepreload" crossorigin href="../assets/modulepreload-polyfill-B5Qt9EMX.js">
-  <link rel="modulepreload" crossorigin href="../assets/comum-BVtrLN60.js">
-  <link rel="stylesheet" crossorigin href="../assets/comum-BfRWXAqx.css">
+  <script type="module" crossorigin src="../assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
+  <script type="module" crossorigin src="../assets/comum-Dv1B8lU0.js"></script>
+  <script type="module" crossorigin src="../assets/barco-D7bA7JkS.js"></script>
+  <link rel="stylesheet" crossorigin href="../assets/comum-CHzBb0Qd.css">
 </head>
 <body class="gt50">
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -142,6 +142,7 @@
           <div class="amostras" role="radiogroup" aria-labelledby="cfg-casco">
             <button type="button" role="radio" class="amostra gelcoat" data-cfg="casco" data-valor="#F2F1EC" data-nome="White" data-slug="white" aria-checked="true" aria-label="White" style="--a:#F2F1EC"></button>
             <button type="button" role="radio" class="amostra gelcoat" data-cfg="casco" data-valor="#1B3358" data-nome="Abysse blue" data-slug="abysse-blue" aria-checked="false" aria-label="Abysse blue, Alpine hull paint" style="--a:#1B3358"></button>
+            <button type="button" role="radio" class="amostra gelcoat" data-cfg="casco" data-valor="#1D447F" data-nome="Vision blue, Alpine" data-slug="vision-blue" aria-checked="false" aria-label="Vision blue, Alpine edition hull paint" style="--a:#1D447F"></button>
           </div>
         </div>
         <div class="config-grupo">
@@ -156,7 +157,7 @@
           <p class="config-resumo" data-cfg-resumo>White hull, Linetex Chalk cockpit, Natural teak.</p>
           <button type="button" class="botao vazio" data-cfg-partilha>Copy the link to this GT50</button>
         </div>
-        <p class="nota-config">White and Abysse blue are BENETEAU hull colours for the Gran Turismo 50, and Linetex Chalk upholstery is standard. Alpine Vision blue, metallic hull paint and Crevin Strada 07 upholstery are also offered. The 3D yacht is a concept model built from official views, shown plain on purpose. Your dealer confirms the colours and options available.</p>
+        <p class="nota-config">White, Abysse blue and Alpine Vision blue are BENETEAU hull colours for the Gran Turismo 50, and Linetex Chalk upholstery is standard. The dark hardtop follows the official render. Metallic hull paint and Crevin Strada 07 upholstery are also offered. The 3D yacht is a concept model built from official views, shown plain on purpose. Your dealer confirms the colours and options available.</p>
       </div>
     </div>
   </section>
@@ -398,5 +399,7 @@
   <iframe title="BENETEAU film" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 </div>
 
+<!-- ficha do barco para o molde comum (src/barco.js): pontos medidos no modelo com visor.chao(x, z), textos da página oficial -->
+<script type="application/json" id="barco-dados">{"glb": "gt50-liso.glb", "viagem": "viagem", "zonas": {"rodar": 3.14159, "borda": [0.5, 0.53], "tecto": 0.86, "topo": [0.2, 0.66], "vidro": [2, 2, 2], "plataforma": [0, 2]}, "pontos": {"porta": {"mundo": [-0.8, 0.385, 0]}, "posto": {"mundo": [-0.15, 0.605, 0], "titulo": "Three-season helm station", "texto": "Volvo joystick control, an eco-drive system and a choice of open or protected helm."}, "conves": {"mundo": [0.55, 0.43, 0], "titulo": "A free-flowing main deck", "texto": "Relaxation areas linked by a free-flowing main deck, secure underway, villa-like once moored."}, "plataforma": {"mundo": [-1.0, 0.245, 0], "titulo": "Swim platform", "texto": "A swim platform close to the water, at the stern."}}, "voo": {"posto": {"ang": 0.45, "alt": 0.5, "zoom": 0.7}, "conves": {"ang": 1.15, "alt": 0.48, "zoom": 0.65}, "plataforma": {"ang": -2.05, "alt": 0.32, "zoom": 0.6}, "porta": {"ang": -1.7, "alt": 0.36}}, "cores": [{"slug": "white", "hex": "#F2F1EC", "nome": "White"}, {"slug": "abysse-blue", "hex": "#1B3358", "nome": "Abysse blue"}, {"slug": "vision-blue", "hex": "#1D447F", "nome": "Vision blue, Alpine"}], "resumo": "{casco} hull, Linetex Chalk cockpit, Natural teak.", "nome": "Gran Turismo 50"}</script>
 </body>
 </html>
